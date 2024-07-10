@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <link href="{% static 'profile_card.css' %}" rel="stylesheet">
+</head>
+
+<div class="infocardContainer">
+  <div id="main">
+    <img src="{{ user_info.profile_picture }}"></img>
+  </div>
+  <div id="textbois">
+    <h2>{{ user_info.username }}</h2>
+    <h4>{{ user_info.bio }}</h4>
+  </div>
+</div>
